@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan JQuery</title>
+
+    <!--
+    NAUFAL ZAKI
+    2311102120
+    -->
+  </head>
+  <body>
+    <h1>Praktikum jQuery</h1>
+    <p id="hasil">Klik tombol di bawah ini</p>
+    <button id="tombol">Klik Saya</button>
+
+    <script
+      src="https://code.jquery.com/jquery-4.0.0.js"
+      integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#tombol").click(function () {
+          $("#hasil").text("Ini adalah hasil JQuery dari Naufal Zaki");
+        });
+      });
+    </script>
+  </body>
+</html>

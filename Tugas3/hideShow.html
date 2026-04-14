@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hide and Show jQuery</title>
+
+    <!--
+    NAUFAL ZAKI
+    2311102120
+    -->
+  </head>
+  <body>
+    <h1>Praktikum jQuery</h1>
+
+    <p id="teks">
+      Jika kamu klik tombol "Hide" aku akan menghilang, dan sebaliknya
+    </p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+    <script
+      src="https://code.jquery.com/jquery-4.0.0.js"
+      integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#hide").click(function () {
+          $("#teks").hide();
+        });
+
+        $("#show").click(function () {
+          $("#teks").show();
+        });
+      });
+    </script>
+  </body>
+</html>
